@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+      body {
+  background-color: white;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.top-bar-123 {
+  display: flex;
+    justify-content: space-between;
+  align-items: center;
+  background-color: darkgray;
+  padding: 15px;
+    margin: 10px;
+  border: 3px solid black;
+  border-radius: 10px
+}
+
+.mid-stats {
+  display: flex;
+  gap: 20px;
+}
+
+.rightbtns {
+  display: flex;
+   gap: 10px;
+}
+
+.big-wrap {
+  display: block; 
+  margin: 10px;
+}
+
+.blue-zone {
+  display: flex;
+   flex-direction: column;
+   justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: lightblue;
+  border: 2px solid blue;
+  padding: 40px;
+  margin-bottom: 20px;
+}
+
+.dude {
+  background-color: red;
+  padding: 10px;
+  color: white;
+}
+
+.str {
+   background-color: yellow;
+   padding: 5px;
+}
+
+.plat {
+  background-color: green;
+  padding: 10px 40px;
+  color: white;
+}
+
+/* bottom 3 pannels */
+.three-things {
+  display: flex;
+  gap: 20px;
+}
+
+.box {
+  flex: 1;
+  background-color: #eee;
+  border: 2px solid black;
+  border-radius: 8px;
+    padding: 20px;
+}
+
+.ctrls-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-line1 {
+  display: flex;
+   justify-content: center;
+}
+
+.btn-line2 {
+   display: flex;
+   gap: 10px;
+}
+
+.bag-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.thingy {
+  padding: 15px;
+  background-color: orange;
+  border: 2px solid brown;
+  border-radius: 5px;
+}
+
+.q-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 5px;
+}
+
+.bottom-foot {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  margin: 10px;
+}
+
+.unused-class-test {
+  color: pink;
+}
+
+@media (max-width: 768px) {
+   .three-things {
+      flex-direction: column;
+   }
+   
+   .top-bar-123 {
+     flex-direction: column;
+     gap: 15px;
+   }
+}
+   </style>
+<title>quest thing</title>
+</head>
+<body>
+
+  <header class="top-bar-123">
+    <h1>Flexbox Quest</h1>
+    <div class="mid-stats">
+    <span>Lives: 3</span>
+      <span>Coins: 120</span>
+    <span>Level: 1</span>
+    </div>
+    <div class="rightbtns">
+      <button>Pause</button>
+      <button>Menu</button>
+    </div>
+  </header>
+
+  <main class="big-wrap">
+  
+    <!-- gam area -->
+    <section class="blue-zone">
+      <div class="str">STAR</div>
+        <div class="dude">PLAYER</div>
+        
+      <div class="plat">PLATFORM</div>
+       <div class="plat">PLATFORM</div>
+    </section>
+
+    <section class="three-things">
+      
+      <div class="box ctrls-box">
+         <h2>Controls</h2>
+         <div class="btn-line1"><button>↑</button></div>
+         <div class="btn-line2">
+            <button>←</button> <button>↓</button> <button>→</button>
+         </div>
+         <button class="jmp">Jump</button>
+      </div>
+
+      <div class="box bag-stuff">
+         <h2>Inventory</h2>
+         <div class="bag-items">
+            <div class="thingy">Sword</div>
+            <div class="thingy">Shield</div>
+           <div class="thingy">Potion</div>
+            <div class="thingy">Key</div>
+         </div>
+      </div>
+
+      <div class="box text-quests">
+         <h2>Quest</h2>
+         <div class="q-line">
+            <span>Collect 3 Stars</span> <span>1 / 3</span>
+         </div>
+         <div class="q-line">
+            <span>Find the Golden Key</span> <span>0 / 1</span>
+         </div>
+         <div class="q-line">
+            <span>Defeat the Monster</span> <span>0 / 1</span>
+         </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="bottom-foot">
+     Game Footer 
+  </footer>
+
+</body>
+</html>
